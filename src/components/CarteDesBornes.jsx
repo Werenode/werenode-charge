@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, ZoomControl, ScaleControl, useM
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import 'react-leaflet-markercluster/styles';
 import L from "leaflet";
-//import { bornes } from "../data/bornes";
+import { bornes } from "../data/bornes";
 
 // --- Fix des icônes Leaflet (sinon les marqueurs n'apparaissent pas en build/Pages) ---
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
