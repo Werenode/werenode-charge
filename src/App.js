@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import CarteDesBornes from "./components/CarteDesBornes";
-import MapView from "./components/MapView";
 import { Menu, X, MapPin, Phone, Mail, Zap, Battery, Share2, ArrowRight, ChevronDown, Users, Clock, Euro, Star, Filter, Navigation, CheckCircle, TrendingUp, Shield, Wifi, Calendar, MessageCircle, Leaf } from 'lucide-react';
 
 const evIcon = new L.Icon({
@@ -960,6 +959,7 @@ const WerenodeChargeSite = () => {
 };
 
 export default WerenodeChargeSite;
+
 
 
 
