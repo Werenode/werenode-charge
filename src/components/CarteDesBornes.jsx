@@ -62,7 +62,7 @@ function LocateButton() {
   return null;
 }
 
-export default function RejoignezCollectifMap() {
+export default function CartesDesBornes() {
   const franceCenter = useMemo(() => [46.6, 2.4], []);
   const clusterOptions = useMemo(() => ({ chunkedLoading: true }), []);
 
