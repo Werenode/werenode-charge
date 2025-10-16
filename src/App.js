@@ -565,7 +565,7 @@ const WerenodeChargeSite = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <h1 className="text-4xl font-bold text-slate-900 mb-4">Partagez votre borne</h1>
-          <p className="text-slate-600 text-lg max-w-3xl">Transformez votre borne en source de revenus passifs. Nous gérons la visibilité, les paiements et l\'assistance.</p>
+          <p className="text-slate-600 text-lg max-w-3xl">Transformez votre borne en source de revenus passifs. Nous gérons la visibilité, les paiements et l'assistance.</p>
         </div>
       </section>
       <section className="py-12">
@@ -959,6 +959,7 @@ const WerenodeChargeSite = () => {
 };
 
 export default WerenodeChargeSite;
+
 
 
 
