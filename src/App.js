@@ -348,7 +348,7 @@ const WerenodeChargeSite = () => {
 
           {/* Carte interactive réelle */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-12">
-            <RejoignezCollectifMap />
+            <CarteDesBornes />
           </div>
 
 
@@ -960,5 +960,6 @@ const WerenodeChargeSite = () => {
 };
 
 export default WerenodeChargeSite;
+
 
 
