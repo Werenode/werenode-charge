@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import CarteDesBornes from "./components/CarteDesBornes";
+import ( bornes ) from "./data/bornes.js";
 import { Menu, X, MapPin, Phone, Mail, Zap, Battery, Share2, ArrowRight, ChevronDown, Users, Clock, Euro, Star, Filter, Navigation, CheckCircle, TrendingUp, Shield, Wifi, Calendar, MessageCircle, Leaf } from 'lucide-react';
 
 const evIcon = new L.Icon({
@@ -33,111 +34,6 @@ const WerenodeChargeSite = () => {
     { key: 'faq', label: 'FAQ' },
     { key: 'contact', label: 'Contact' },
     { key: 'qui-sommes-nous', label: 'À propos' }
-  ];
-
-  const bornes = [
-    { 
-      id: 1, 
-      nom: 'Station Lyon Confluence', 
-      adresse: '15 Rue de la République',
-      ville: 'Lyon',
-      lat: 45.748, 
-      lng: 4.824, 
-      puissance: '22 kW',
-      type: 'Type 2',
-      prix: '0.35',
-      disponible: true,
-      note: 4.8,
-      avis: 127,
-      distance: '2.1',
-      proprietaire: 'Marie D.',
-      horaires: '24/7'
-    },
-    { 
-      id: 2, 
-      nom: 'Borne Marseille Vieux-Port', 
-      adresse: '8 Quai du Port',
-      ville: 'Marseille',
-      lat: 43.295, 
-      lng: 5.375, 
-      puissance: '50 kW',
-      type: 'CCS + Type 2',
-      prix: '0.45',
-      disponible: true,
-      note: 4.6,
-      avis: 89,
-      distance: '1.5',
-      proprietaire: 'Jean P.',
-      horaires: '6h-22h'
-    },
-    { 
-      id: 3, 
-      nom: 'Charge Toulouse Capitole', 
-      adresse: 'Place du Capitole',
-      ville: 'Toulouse',
-      lat: 43.604, 
-      lng: 1.444, 
-      puissance: '7 kW',
-      type: 'Type 2',
-      prix: '0.28',
-      disponible: false,
-      note: 4.9,
-      avis: 203,
-      distance: '0.8',
-      proprietaire: 'Sophie L.',
-      horaires: '24/7'
-    },
-    { 
-      id: 4, 
-      nom: 'SuperCharge Bordeaux', 
-      adresse: '45 Cours de l\'Intendance',
-      ville: 'Bordeaux',
-      lat: 44.837, 
-      lng: -0.579, 
-      puissance: '150 kW',
-      type: 'CCS',
-      prix: '0.55',
-      disponible: true,
-      note: 4.7,
-      avis: 156,
-      distance: '3.2',
-      proprietaire: 'Pierre M.',
-      horaires: '24/7'
-    },
-    { 
-      id: 5, 
-      nom: 'Éco-Charge Nice Promenade', 
-      adresse: 'Promenade des Anglais',
-      ville: 'Nice',
-      lat: 43.710, 
-      lng: 7.262, 
-      puissance: '22 kW',
-      type: 'Type 2',
-      prix: '0.32',
-      disponible: true,
-      note: 4.5,
-      avis: 78,
-      distance: '1.9',
-      proprietaire: 'Lucas B.',
-      horaires: '7h-23h'
-    },
-    { 
-      id: 6, 
-      nom: 'Station Nantes Centre', 
-      adresse: 'Rue Crébillon',
-      ville: 'Nantes',
-      lat: 47.213, 
-      lng: -1.553, 
-      puissance: '11 kW',
-      type: 'Type 2',
-      prix: '0.30',
-      disponible: true,
-      note: 4.7,
-      avis: 94,
-      distance: '4.5',
-      proprietaire: 'Emma R.',
-      horaires: '24/7'
-    }
   ];
 
   const faqData = [
@@ -959,6 +855,7 @@ const WerenodeChargeSite = () => {
 };
 
 export default WerenodeChargeSite;
+
 
 
 
