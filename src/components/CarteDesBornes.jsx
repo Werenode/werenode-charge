@@ -93,7 +93,7 @@ export default function CartesDesBornes() {
             <Marker key={c.id} position={[c.lat, c.lng]}>
               <Popup>
                 <div style={{ lineHeight: 1.4 }}>
-                  <strong>{c.name}</strong><br />
+                  <strong>{c.nom}</strong><br />
                   Prix: {c.prix}<br />
                   Puissance: {c.puissance} kW<br />
                   <button
