@@ -94,8 +94,8 @@ export default function CartesDesBornes() {
               <Popup>
                 <div style={{ lineHeight: 1.4 }}>
                   <strong>{c.name}</strong><br />
-                  Participants: {c.participants}<br />
-                  Puissance: {c.production_kWp} kWc<br />
+                  Prix: {c.prix}<br />
+                  Puissance: {c.puissance} kW<br />
                   <button
                     style={{
                       marginTop: 8,
@@ -105,9 +105,9 @@ export default function CartesDesBornes() {
                       cursor: "pointer",
                       background: "white"
                     }}
-                    onClick={() => alert(`Prendre contact avec ${c.name}`)}
+                    onClick={() => alert(`Prendre contact avec ${c.proprietaire}`)}
                   >
-                    Rejoindre / Contacter
+                    Recharger / Contacter
                   </button>
                 </div>
               </Popup>
